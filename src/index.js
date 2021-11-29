@@ -40,3 +40,35 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+// notes from class: 
+// const linksRealArray = Array.from(nav);
+// const homeLink = linksRealArray.find(nav => nav.textContent === '')
+
+
+// Content Keys
+
+const navInput = siteContent['nav'];
+const ctaInput = siteContent['cta'];
+const mainContentInput = siteContent['main-content'];
+const contactInput = siteContent['contact'];
+const footerInput = siteContent['footer'];
+const imageInput = siteContent['images'];
+
+
+// Nav Bar
+const header = document.querySelector('header');
+  document.querySelector('nav a:nth-of-type(1)').textContent = navInput['nav-item-1'];
+  document.querySelector('nav a:nth-of-type(2)').textContent = navInput['nav-item-2'];
+  document.querySelector('nav a:nth-of-type(3)').textContent = navInput['nav-item-3'];
+  document.querySelector('nav a:nth-of-type(4)').textContent = navInput['nav-item-4'];
+  document.querySelector('nav a:nth-of-type(5)').textContent = navInput['nav-item-5'];
+  document.querySelector('nav a:nth-of-type(6)').textContent = navInput['nav-item-6'];
+
+let logo = document.getElementById("logo-img");
+logo.setAttribute('src', imageInput['logo-img']);
+
+
+
+
+
